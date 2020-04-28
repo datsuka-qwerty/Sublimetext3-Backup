@@ -1,0 +1,22 @@
+[
+// ショートカットをブラウザ風に設定
+	{ "keys": ["ctrl+t"], "command": "new_file" },
+	{ "keys": ["ctrl+shift+w"], "command": "close_all" },
+
+// ctrl+alt+rでsublime独自の整形
+	{ "keys": ["ctrl+alt+r"], "command": "reindent" },
+
+// alt+tで行頭、alt+rで行末に移動
+	{ "keys": ["alt+t"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["alt+r"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+// s,f,e,dを左、右、上、下に設定
+	{ "keys": ["alt+s"], "command": "move", "args": {"by": "characters", "forward": false} },
+	{ "keys": ["alt+f"], "command": "move", "args": {"by": "characters", "forward": true} },
+	{ "keys": ["alt+e"], "command": "move", "args": {"by": "lines", "forward": false} },
+	{ "keys": ["alt+d"], "command": "move", "args": {"by": "lines", "forward": true} },
+
+// alt+q,alt+wでカーソルを単語毎に移動しながら選択
+	{ "keys": ["alt+q"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+	{ "keys": ["alt+w"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+]

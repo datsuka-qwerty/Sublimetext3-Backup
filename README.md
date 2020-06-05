@@ -1,4 +1,4 @@
-This is my sublimetext3's settings.
+This is my SublimeText3's settings.
 ====================================
 
 How to restore settings

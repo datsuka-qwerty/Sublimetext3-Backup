@@ -1,0 +1,21 @@
+// SublimeLinter Settings - User
+// エラー箇所を●から図形に変更する設定 outline->fillにするとより目立つ
+{
+    "styles": [{
+        "mark_style": "outline",
+        "priority": 1,
+        "scope": "sublimelinter.mark.warning",
+        "icon": "triangle",
+        "types": [
+            "warning"
+        ]
+    }, {
+        "mark_style": "outline",
+        "priority": 1,
+        "scope": "sublimelinter.mark.error",
+        "icon": "x",
+        "types": [
+            "error"
+        ]
+    }]
+}

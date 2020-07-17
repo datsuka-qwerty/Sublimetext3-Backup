@@ -1,0 +1,27 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"All Autocomplete",
+		"AutoFileName",
+		"BracketHighlighter",
+		"C Improved",
+		"ColorHelper",
+		"ConvertToUTF8",
+		"EasyClangComplete",
+		"FileManager",
+		"Goto-CSS-Declaration",
+		"IMESupport",
+		"Material Theme",
+		"Package Control",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-clang",
+		"SyncedSideBar",
+		"TrailingSpaces"
+	]
+}

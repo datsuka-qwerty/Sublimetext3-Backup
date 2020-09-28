@@ -1,0 +1,8 @@
+{
+	"common_flags":[
+        "-IC:/msys32/mingw32/include",
+        "-IC:/msys32/mingw32/xi686-w64-mingw32/include",
+        "-IC:/msys32/mingw32/lib/clang/$clang_version/include",
+        "-I$project_base_path/src"
+    ],
+}

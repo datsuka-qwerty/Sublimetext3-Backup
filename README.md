@@ -25,7 +25,7 @@ Install MSYS32
 
 Install node.js
 ----------------------
-1. Get [here]() to node.js installer.
+1. Get [here](https://nodejs.org/) to node.js installer.
 2. Run ``node -v`` then it shows node.js version.
 
 <font color="Red">CAUTION</font>

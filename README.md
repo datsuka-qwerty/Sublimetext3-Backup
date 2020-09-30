@@ -1,5 +1,4 @@
-This is my SublimeText3's settings.
--------------------------------------
+# This is my SublimeText3 settings.
 
 Files name format
 -------------------------

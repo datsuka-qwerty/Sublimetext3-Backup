@@ -1,0 +1,29 @@
+{
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/User-Material-Theme-Darker.tmTheme",
+	"draw_indent_guides": true,
+	"draw_white_space": "all",
+	"font_face": "Ricty Diminished",
+	"font_size": 11,
+	"tab_size": 4,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"translate_tabs_to_spaces": false,
+	"material_theme_accent_cyan": true,
+	"material_theme_big_fileicons": true,
+	"material_theme_contrast_mode": true,
+	"show_encoding": true,
+	"show_line_endings": true,
+	"theme": "Material-Theme-Darker.sublime-theme",
+	"theme_accent_cyan": true,
+	"theme_icons_materialized": true
+}

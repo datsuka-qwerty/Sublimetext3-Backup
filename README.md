@@ -17,7 +17,7 @@ Install MSYS32
 <font color="Tomato">__ATTENTION__</font> These are assuming Windows.
 
 1. Click [here](https://www.msys2.org/) to install MSYS32.
-2. Run ``pacman -S`` from the terminal. (If you wanna use LSP and debuger, install clang-tools-extra and gdb)
+2. Run ``pacman -Syu`` from the terminal. (If you wanna use LSP and debuger, install clang-tools-extra and gdb)
 3. Through PATH to the following location.
 	* ``c:\msys64\mingw64\bin`` or using 32bit system ``C:\msys32\mingw32\bin``
 	* ``c:\msys64\user\bin`` or using 32bit system ``C:\msys32\usr\bin``

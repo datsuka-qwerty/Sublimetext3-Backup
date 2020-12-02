@@ -6,7 +6,7 @@ All backup files name format are YYYY-MM-DD.
 
 How to restore settings
 -------------------------
-As a prerequisite, you need to install __MSYS32__ and __node.js__. (EasyClangComplete needs MSYS32, Linter needs node.js.)
+As a prerequisite, you need to install __MSYS32__ , __node.js__ and __CodeIntel__. (EasyClangComplete needs MSYS32, Linter needs node.js CodeIntel needs SublimeCodeIntel.)
 
 1. Install PackageControll.
 2. Replace User-Material-Theme-Darker.tmTheme and restart ST3.
@@ -27,7 +27,16 @@ Install node.js
 1. Get [here](https://nodejs.org/) to node.js installer.
 2. Run ``node -v`` then it shows node.js version.
 
+Install CodeIntel
+----------------------
+1. Install Python [here](https://www.python.org/). (You need PIP. Python3 includes it.)
+2. Run below command ``python -m pip install --upgrade --pre CodeIntel`` or ``pip install --upgrade --pre CodeIntel``
+3. Install SublimeCodeIntel ``https://packagecontrol.io/packages/SublimeCodeIntel``
+
 <font color="Red">CAUTION</font>
 ---------------------------
 __User-Material-Theme-Darker.tmTheme__ in this repository has been partially edited for me useful use.  
 The original source is [here](https://packagecontrol.io/packages/Material%20Theme).
+
+__User-Monokai Extended.tmTheme__ has been edited too.  
+The original source is [here](https://packagecontrol.io/packages/Monokai%20Extended).

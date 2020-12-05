@@ -6,7 +6,9 @@ All backup files name format are YYYY-MM-DD.
 
 How to restore settings
 -------------------------
-As a prerequisite, you need to install __MSYS32__ , __node.js__ and __CodeIntel__. (EasyClangComplete needs MSYS32, Linter needs node.js CodeIntel needs SublimeCodeIntel.)
+<font color="Tomato">__ATTENTION__</font> __These are assuming Windows.__  
+As a prerequisite, you need to install __MSYS32__ , __node.js__ and __CodeIntel__.  
+(EasyClangComplete needs MSYS32, Linter needs node.js CodeIntel needs SublimeCodeIntel.)
 
 1. Install PackageControll.
 2. Replace User-Material-Theme-Darker.tmTheme and restart ST3.
@@ -14,7 +16,6 @@ As a prerequisite, you need to install __MSYS32__ , __node.js__ and __CodeIntel_
 
 Install MSYS32
 -------------------------
-<font color="Tomato">__ATTENTION__</font> These are assuming Windows.
 
 1. Click [here](https://www.msys2.org/) to install MSYS32.
 2. Run ``pacman -Syu`` from the terminal. (If you wanna use LSP and debuger, install clang-tools-extra and gdb)
@@ -25,11 +26,11 @@ Install MSYS32
 Install node.js
 ----------------------
 1. Get [here](https://nodejs.org/) to node.js installer.
-2. Run ``node -v`` then it shows node.js version.
+2. If running ``node -v`` shows node.js version, install is succesfull.
 
 Install CodeIntel
 ----------------------
-1. Install Python [here](https://www.python.org/). (You need PIP. Python3 includes it.)
+1. Install Python [here](https://www.python.org/). (You need PIP, Python3 includes it.)
 2. Run below command ``python -m pip install --upgrade --pre CodeIntel`` or ``pip install --upgrade --pre CodeIntel``
 3. Install SublimeCodeIntel ``https://packagecontrol.io/packages/SublimeCodeIntel``
 

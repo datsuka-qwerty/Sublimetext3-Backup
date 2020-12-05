@@ -1,5 +1,7 @@
 # This is my SublimeText3 settings.
 
+__日本語版は[こちら](/README.jp.md)__
+
 Files name format
 -------------------------
 All backup files name format are YYYY-MM-DD.
@@ -11,7 +13,7 @@ As a prerequisite, you need to install __MSYS32__ , __node.js__ and __CodeIntel_
 (EasyClangComplete needs MSYS32, Linter needs node.js, CodeIntel needs SublimeCodeIntel.)
 
 1. Install PackageControll.
-2. Replace User-Material-Theme-Darker.tmTheme and restart ST3.
+2. Replace Theme file then restart ST3.
 3. Copy and paste other files.
 
 Install MSYS32
@@ -20,8 +22,8 @@ Install MSYS32
 1. Click [here](https://www.msys2.org/) to install MSYS32.
 2. Run ``pacman -Syu`` from the terminal. (If you wanna use LSP and debuger, install clang-tools-extra and gdb)
 3. Through PATH to the following location.
-	* ``c:\msys64\mingw64\bin`` or using 32bit system ``C:\msys32\mingw32\bin``
-	* ``c:\msys64\user\bin`` or using 32bit system ``C:\msys32\usr\bin``
+	* ``c:\msys64\mingw64\bin`` or using 32bit system-> ``C:\msys32\mingw32\bin``
+	* ``c:\msys64\user\bin`` or using 32bit system-> ``C:\msys32\usr\bin``
 
 Install node.js
 ----------------------

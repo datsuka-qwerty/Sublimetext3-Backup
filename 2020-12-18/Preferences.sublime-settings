@@ -1,10 +1,10 @@
 {
-	"bold_folder_labels": true,
-	"close_windows_when_empty": false,
+	"bold_folder_labels": true, // folder names in the sidebar to bold text
+	"close_windows_when_empty": false, // when close all tab, don't close ST3
 	"color_scheme": "Packages/User/User-Monokai Extended.tmTheme",
-	"draw_indent_guides": true,
-	"draw_white_space": "all",
-	"file_exclude_patterns":
+	"draw_indent_guides": true, // show indent guide
+	"draw_white_space": "all", // show all white space
+	"file_exclude_patterns": // hidden file patterns
 	[
 		"*.pyc",
 		"*.pyo",
@@ -26,7 +26,7 @@
 		"*.db",
 		"*.sublime-workspace"
 	],
-	"folder_exclude_patterns":
+	"folder_exclude_patterns": // hidden folder patterns
 	[
 		".svn",
 		".hg",
@@ -34,8 +34,8 @@
 	],
 	"font_face": "Ricty Diminished",
 	"font_size": 11,
-	"highlight_line": true,
-	"highlight_modified_tabs": true,
+	"highlight_line": true, // editting line highlighte
+	"highlight_modified_tabs": true, // highlight modified file tab
 	"ignored_packages":
 	[
 		"Vintage"
@@ -53,7 +53,7 @@
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"theme_accent_cyan": true,
 	"theme_icons_materialized": true,
-	"translate_tabs_to_spaces": false,
-	"trim_trailing_white_space_on_save": false,
-	"enable_table_editor": true
+	"translate_tabs_to_spaces": false, // auto tab to space feature is false
+	"trim_trailing_white_space_on_save": false, // auto trim white space is false
+	"enable_table_editor": true, // table editor is enable
 }

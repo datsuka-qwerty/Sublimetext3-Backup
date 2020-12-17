@@ -1,0 +1,36 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"All Autocomplete",
+		"AutoFileName",
+		"BracketHighlighter",
+		"C Improved",
+		"ColorHelper",
+		"ConvertToUTF8",
+		"EasyClangComplete",
+		"FileManager",
+		"Goto-CSS-Declaration",
+		"IMESupport",
+		"Markdown Extended",
+		"Material Theme",
+		"Monokai Extended",
+		"Monokai++",
+		"OmniMarkupPreviewer",
+		"Package Control",
+		"ProjectManager",
+		"SublimeCodeIntel",
+		"SublimeLinter",
+		"SublimeLinter-clang",
+		"SublimeLinter-gcc",
+		"SyncedSideBar",
+		"Table Editor",
+		"Terminal",
+		"Theme - Monokai Pro",
+		"TrailingSpaces"
+	]
+}

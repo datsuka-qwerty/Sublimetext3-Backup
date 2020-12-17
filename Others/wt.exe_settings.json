@@ -22,8 +22,8 @@
             "acrylicOpacity" : 0.75,
             "closeOnExit" : true,
             "colorScheme": "Monokai Night",
-            "backgroundImage": "C:\\02gura.GIF", // background image
-            "backgroundImageOpacity": 0.3, // transparency of the background image in 0-1
+            "backgroundImage": "C:\\01gura.jpg", // background image
+            "backgroundImageOpacity": 0.1, // transparency of the background image in 0-1
             "fontFace": "Ricty Diminished Bold",
             "fontSize" : 12,
             "useAcrylic": true
@@ -41,8 +41,8 @@
             "historySize" : 9001,
             "icon" : "C:\\msys32\\msys2.ico",
             "name" : "MSYS Shell",
-            "backgroundImage": "C:\\02SALLA.gif",
-            "backgroundImageOpacity": 0.3,
+            "backgroundImage": "C:\\03SALLA.png",
+            "backgroundImageOpacity": 0.1,
             "padding" : "0, 0, 0, 0",
             "snapOnInput" : true,
             "startingDirectory" : "%USERPROFILE%",

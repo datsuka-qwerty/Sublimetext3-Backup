@@ -10,7 +10,8 @@ __EN version is [here](/README.md)__
 -------------------------
 <font color="Tomato">__注意__</font> __Windows環境が前提__  
 __MSYS32__ と __node.js__ と __CodeIntel__ のインストールが必要  
-(EasyClangCompleteがMSYS32, Linterがnode.js, CodeIntelがSublimeCodeIntel に依存してる)
+(EasyClangCompleteがMSYS32, Linterがnode.js, CodeIntelがSublimeCodeIntel に依存してる)  
+__ユーザー名は`USER`で統一、必要に応じて変更が必要__
 
 1. PackageControllのインスコ
 2. テーマファイルのコピーとST3の再起動

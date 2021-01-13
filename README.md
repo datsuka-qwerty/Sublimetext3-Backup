@@ -10,7 +10,8 @@ How to restore settings
 -------------------------
 <font color="Tomato">__ATTENTION__</font> __These are assuming Windows.__  
 As a prerequisite, you need to install __MSYS32__ , __node.js__ and __CodeIntel__.  
-(EasyClangComplete needs MSYS32, Linter needs node.js, CodeIntel needs SublimeCodeIntel.)
+(EasyClangComplete needs MSYS32, Linter needs node.js, CodeIntel needs SublimeCodeIntel.)  
+__You need to change `USER` to your name each config files.__
 
 1. Install PackageControll.
 2. Replace Theme file then restart ST3.

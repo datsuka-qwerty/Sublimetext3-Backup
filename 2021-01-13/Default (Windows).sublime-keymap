@@ -1,0 +1,63 @@
+[
+// like browser shortcut
+	{ "keys": ["ctrl+t"], "command": "new_file" },
+	{ "keys": ["ctrl+shift+w"], "command": "close_all" },
+	{ "keys": ["ctrl+shift+t"], "command": "reopen_last_file" },
+
+// sublime reindent
+	{ "keys": ["ctrl+shift+l"], "command": "reindent" },
+
+// home button end button
+	{ "keys": ["alt+t"], "command": "move_to", "args": {"to": "bol", "extend": false} },
+	{ "keys": ["alt+r"], "command": "move_to", "args": {"to": "eol", "extend": false} },
+
+// s,d,f,e are left,down,right,up
+	{ "keys": ["alt+s"], "command": "move", "args": {"by": "characters", "forward": false} },
+	{ "keys": ["alt+f"], "command": "move", "args": {"by": "characters", "forward": true} },
+	{ "keys": ["alt+e"], "command": "move", "args": {"by": "lines", "forward": false} },
+	{ "keys": ["alt+d"], "command": "move", "args": {"by": "lines", "forward": true} },
+
+// open terminal
+	{ "keys": ["ctrl+shift+c"], "command": "open_terminal" },
+	{ "keys": ["ctrl+shift+alt+c"], "command": "open_terminal_project_folder" },
+
+// alt+q,alt+w move by words
+	{ "keys": ["alt+q"], "command": "move", "args": {"by": "words", "forward": false, "extend": true} },
+	{ "keys": ["alt+w"], "command": "move", "args": {"by": "word_ends", "forward": true, "extend": true} },
+
+// tab key
+	{ "keys": ["shift+tab"], "command": "insert", "args": {"characters": "\t"} },
+
+// move to outside
+	{ "keys": ["tab"], "command": "move", "args": {"by": "characters", "forward": true }, "context":
+		[
+			{ "key": "following_text", "operator": "regex_contains", "operand": "^[)}'\"\\]]", "match_all": true },
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": false }
+		]
+	},
+
+	{ "keys": ["alt+space"], "command": "hide_auto_complete", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	},
+
+	// Tab and Shift+Tab to move up and down in dropdown list
+	{ "keys": ["shift+tab"], "command": "auto_complete", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	},
+
+	{ "keys": ["ctrl+tab"], "command": "auto_complete_prev", "context":
+		[
+			{ "key": "auto_complete_visible", "operator": "equal", "operand": true }
+		]
+	},
+
+	// remove temporary files
+	{ 	"keys": ["ctrl+alt+l"],
+		"context":  [
+			{"key": "selector", "operator": "equal", "operand": "text.tex.latex"}],
+		"command": "delete_temp_files"},
+]

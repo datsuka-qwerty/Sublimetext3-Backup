@@ -1,0 +1,6 @@
+// Settings in here override those in "TrailingSpaces/trailing_spaces.sublime-settings"
+
+{
+	"trailing_spaces_regexp": "[ \t　]+",
+	"trailing_spaces_trim_on_save": false,
+}

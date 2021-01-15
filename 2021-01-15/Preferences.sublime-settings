@@ -1,0 +1,91 @@
+{
+	"auto_complete_triggers":
+	[
+		{
+			"characters": ".>:",
+			"selector": "source.c++ - string - comment - constant.numeric"
+		},
+		{
+			"characters": ".>:",
+			"selector": "source.c - string - comment - constant.numeric"
+		},
+		{
+			"characters": ".>: ",
+			"selector": "source.objc++ - string - comment - constant.numeric"
+		},
+		{
+			"characters": ".>: ",
+			"selector": "source.objc - string - comment - constant.numeric"
+		},
+		{
+			"characters": ".>: ",
+			"selector": "source.cuda-c++ - string - comment - constant.numeric"
+		},
+		{
+			"characters": "\\",
+			"selector": "text.tex.latex"
+		}
+	],
+	"bold_folder_labels": true,
+	"close_windows_when_empty": false,
+	"color_scheme": "Packages/User/User-Monokai Extended.tmTheme",
+	"draw_indent_guides": true,
+	"draw_white_space": "all",
+	"enable_table_editor": true,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		".svn",
+		".hg",
+		"CVS"
+	],
+	"font_face": "Ricty Diminished",
+	"font_size": 11,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_active"
+	],
+	"material_theme_accent_cyan": true,
+	"material_theme_big_fileicons": true,
+	"material_theme_contrast_mode": true,
+	"open_externally_patterns":
+	[
+		"*.pdf"
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"tab_size": 4,
+	"theme": "Material-Theme-Darker.sublime-theme",
+	"theme_accent_cyan": true,
+	"theme_icons_materialized": true,
+	"translate_tabs_to_spaces": false,
+	"trim_trailing_white_space_on_save": false
+}

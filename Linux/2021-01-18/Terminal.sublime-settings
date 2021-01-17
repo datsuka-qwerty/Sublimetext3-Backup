@@ -1,0 +1,5 @@
+{
+  "terminal": "gnome-terminal",
+  // Unset LD_PRELOAD which may cause problems for sublime with imfix
+  "env": {"LD_PRELOAD": null}
+}

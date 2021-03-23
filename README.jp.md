@@ -68,7 +68,7 @@ Linuxユーザー
 <a id="リストア方法-1"></a>
 リストア方法
 --------------------------
-<font color="Tomato">__注意__</font> __Windows環境が前提__  
+<font color="Tomato">__注意__</font> __Linux環境が前提__  
 __MSYS32__ と __node.js__ と __CodeIntel__ のインストールが必要  
 (EasyClangCompleteがclang, Linterがnode.js, CodeIntelがSublimeCodeIntel に依存してる)  
 __ユーザー名は`USER`で統一、必要に応じて変更が必要__

@@ -107,6 +107,6 @@ __User-Material-Theme-Darker.tmTheme__ は他人のテーマファイルを自�
 __User-Monokai Extended.tmTheme__ に関しても同様です  
 オリジナルのものは[こちら](https://packagecontrol.io/packages/Monokai%20Extended)
 
-___Gruvbox Material Dark/Light__ に関しても同様です  
+__Gruvbox Material Dark/Light__ に関しても同様です  
 オリジナルのものは[こちら](https://github.com/sainnhe/gruvbox-material-vscode)  
 tobiastimm様のVSCodeからの[テーマコンバーター](https://github.com/tobiastimm/code-theme-converter)を使わせて頂きました。

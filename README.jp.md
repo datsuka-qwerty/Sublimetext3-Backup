@@ -24,8 +24,7 @@ __EN version is [here](/README.md)__
 フォルダの名前はYYYY-MM-DDの形式
 
 <a id="windowsユーザー"></a>
-Windowsユーザー
-----------------------
+# Windowsユーザー
 <a id="リストア方法"></a>
 リストア方法
 -------------------------
@@ -63,8 +62,7 @@ CodeIntelのインストール
 3. SublimeCodeIntelのインストール [公式ドキュメント](https://github.com/SublimeCodeIntel/SublimeCodeIntel)
 
 <a id="linuxユーザー"></a>
-Linuxユーザー
----------------
+# Linuxユーザー
 <a id="リストア方法-1"></a>
 リストア方法
 --------------------------

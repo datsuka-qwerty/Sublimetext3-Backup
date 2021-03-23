@@ -69,7 +69,7 @@ Linux User
 How to restore settings
 --------------------------
 <font color="Tomato">__ATTENTION__</font> __These are assuming Linux.__  
-As a prerequisite, you need to install __MSYS32__ , __node.js__ and __CodeIntel__.  
+As a prerequisite, you need to install __clang__ , __node.js__ and __CodeIntel__.  
 (EasyClangComplete needs clang, Linter needs node.js, CodeIntel needs SublimeCodeIntel.)  
 __You need to change `USER` to your name each config files.__
 

@@ -23,8 +23,8 @@ All backup files name format are YYYY-MM-DD.
 
 
 <a id="user-content-windows-user"></a>
-Windows User
----------------------
+# Windows User
+
 <a id="user-content-how-to-restore-settings"></a>
 How to restore settings
 -------------------------
@@ -63,8 +63,8 @@ Install CodeIntel
 
 
 <a id="user-content-linux-user"></a>
-Linux User
----------------
+# Linux User
+
 <a id="user-content-how-to-restore-settings-1"></a>
 How to restore settings
 --------------------------

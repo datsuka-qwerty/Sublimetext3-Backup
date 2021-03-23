@@ -107,6 +107,6 @@ The original source is [here](https://packagecontrol.io/packages/Material%20Them
 __User-Monokai Extended.tmTheme__ has been edited too.  
 The original source is [here](https://packagecontrol.io/packages/Monokai%20Extended).
 
-___Gruvbox Material Dark/Light__ has been edited too.  
+__Gruvbox Material Dark/Light__ has been edited too.  
 The original source is [here](https://github.com/sainnhe/gruvbox-material-vscode)  
 Thanks to tobiastimm for making the vscode to sublimetext [theme converter](https://github.com/tobiastimm/code-theme-converter)!

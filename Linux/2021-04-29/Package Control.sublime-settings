@@ -1,0 +1,55 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"IMESupport"
+	],
+	"installed_packages":
+	[
+		"3024 Color Scheme",
+		"A File Icon",
+		"All Autocomplete",
+		"AutoFileName",
+		"BracketHighlighter",
+		"C Improved",
+		"Codecs33",
+		"Color Highlighter",
+		"ColorHelper",
+		"ConvertToUTF8",
+		"Discord Rich Presence",
+		"EasyClangComplete",
+		"FileManager",
+		"Goto-CSS-Declaration",
+		"gruvbox",
+		"Gruvbox Dark",
+		"Highlight",
+		"HTML-CSS-JS Prettify",
+		"IMESupport",
+		"LaTeX-cwl",
+		"LaTeXTools",
+		"Markdown Extended",
+		"MarkdownTOC",
+		"Material Theme",
+		"Monokai Extended",
+		"Monokai++",
+		"Non Text Files",
+		"OmniMarkupPreviewer",
+		"Package Control",
+		"ProjectManager",
+		"SideBarEnhancements",
+		"SublimeCodeIntel",
+		"SublimeCodic",
+		"SublimeLinter",
+		"SublimeLinter-clang",
+		"SublimeLinter-gcc",
+		"SyncedSideBar",
+		"Table Editor",
+		"Terminal",
+		"Theme - Monokai Pro",
+		"TrailingSpaces"
+	],
+	"repositories":
+	[
+		"https://github.com/naoyukik/SublimeCodic"
+	]
+}

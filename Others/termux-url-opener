@@ -1,5 +1,5 @@
 #!/bin/sh
-echo "Which do you want to download?"
+echo "Which do you want download?"
 echo
 echo "1)One Video"
 echo "2)Playlist"

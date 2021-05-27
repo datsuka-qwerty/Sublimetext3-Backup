@@ -6,6 +6,7 @@ echo "2)Playlist"
 echo "3)Channel"
 echo "4)Playlist"
 echo "5)Exit"
+echo "99)Update youtube-dl"
 echo
 read  -p " -> " SELECT
 echo "You selected ${SELECT}"
@@ -47,8 +48,14 @@ then
 	echo "Exit!"
 	sleep 3s
 	exit
+elif [ "$SELECT" -eq "99" ]
+then
+	pip install youtube-dl -U
+	sleep 3s
+	exit
 else
 	echo "Please Retery :-("
+	sleep 5s
 fi
 
 exit

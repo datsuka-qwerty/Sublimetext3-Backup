@@ -4,7 +4,7 @@ echo
 echo "1)One Video"
 echo "2)Playlist"
 echo "3)Channel"
-echo "4)Playlist"
+echo "4)Music"
 echo "5)Exit"
 echo "99)Update youtube-dl"
 echo

@@ -13,7 +13,7 @@ echo "You selected ${SELECT}"
 
 if [ "$SELECT" -eq "1" ]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "~/Downloads/youtube-dl/youtube-dl/%(title)s-%(uploader)s.mp4" --no-mtime $1
+	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "~/Downloads/youtube-dl/%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "2" ]
 then
 	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "~/Downloads/youtube-dl/%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s-%(uploader)s.mp4" --no-mtime $1

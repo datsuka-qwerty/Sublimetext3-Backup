@@ -3,19 +3,24 @@ echo "Which do you want to download?"
 echo
 echo "1)One Video"
 echo "2)Playlist"
-echo "3)Music"
-echo "4)Exit"
+echo "3)Channel"
+echo "4)Playlist"
+echo "5)Exit"
+echo "99)Update youtube-dl"
 echo
 read  -p " -> " SELECT
 echo "You selected ${SELECT}"
 
 if [ "$SELECT" -eq "1" ]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "/home/datsuka-qwerty/Downloads/youtube-dl/%(title)s-%(uploader)s.mp4" --no-mtime $1
+	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "~/Downloads/youtube-dl/youtube-dl/%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "2" ]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "/home/datsuka-qwerty/Downloads/youtube-dl/%(playlist_index)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
+	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "~/Downloads/youtube-dl/%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "3" ]
+then
+	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "~/Downloads/youtube-dl/%(channel)s/%(upload_date)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
+elif [ "$SELECT" -eq "4" ]
 then
 	echo "1)One video"
 	echo "2)Plyalist"
@@ -25,10 +30,10 @@ then
 	echo "You selected ${SELECT1}"
 	if [ "$SELECT1" -eq "1" ]
 	then
-		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "/home/datsuka-qwerty/Downloads/youtube-dl/%(title)s-%(uploader)s.m4a" --no-mtime $1
+		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "~/Downloads/youtube-dl/%(title)s-%(uploader)s.m4a" --no-mtime $1
 	elif [ "$SELECT1" -eq "2" ]
 	then
-		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "/home/datsuka-qwerty/Downloads/youtube-dl/%(playlist_index)s_%(title)s-%(uploader)s.m4a" --no-mtime $1
+		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "~/Downloads/youtube-dl/%(playlist_index)s_%(title)s-%(uploader)s.m4a" --no-mtime $1
 	elif [ "$SELECT1" -eq "3" ]
 	then
 		echo "Exit!"
@@ -38,13 +43,19 @@ then
 		echo "Please Retery :-("
 		exit
 	fi
-elif [ "$SELECT" -eq "4" ]
+elif [ "$SELECT" -eq "5" ]
 then
 	echo "Exit!"
 	sleep 3s
 	exit
+elif [ "$SELECT" -eq "99" ]
+then
+	pip install youtube-dl -U
+	sleep 3s
+	exit
 else
 	echo "Please Retery :-("
+	sleep 5s
 fi
 
 exit

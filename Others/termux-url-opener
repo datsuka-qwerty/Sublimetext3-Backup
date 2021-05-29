@@ -4,8 +4,12 @@ echo
 echo "1)One Video"
 echo "2)Playlist"
 echo "3)Channel"
-echo "4)Musoc"
+echo "4)Audio"
+echo
 echo "5)Exit"
+echo
+echo "11)Normal Download"
+echo "22)Normal Audio Download"
 echo "99)Update youtube-dl"
 echo
 read  -p " -> " SELECT
@@ -48,6 +52,12 @@ then
 	echo "Exit!"
 	sleep 3s
 	exit
+elif [ "$SELECT" -eq "11" ]
+then
+	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" -o "~/storage/downloads/youtube-dl/%(title)s.mp4" $1
+elif [ "$SELECT" -eq "22" ]
+then
+	youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]" -o "~/storage/downloads/youtube-dl/%(title)s.m4a" $1
 elif [ "$SELECT" -eq "99" ]
 then
 	pip install youtube-dl -U

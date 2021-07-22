@@ -1,0 +1,13 @@
+#!/bin/sh
+
+for FILE in *.$1
+do
+    FILENAME=`echo ${FILE} | sed 's/\.[^\.]*$//'`
+    ffmpeg -i "${FILENAME}.$1" "${FILENAME}.$2"
+done
+
+if [ $3 = y -o $3 = Y ]; then
+  rm -rfI *.$1
+fi
+
+echo "DONE!"

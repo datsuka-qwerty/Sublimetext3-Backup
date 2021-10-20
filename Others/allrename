@@ -1,0 +1,2 @@
+#!/bin/sh
+for n in $(find ./ -type f); do mv $n $n.$1 ; done

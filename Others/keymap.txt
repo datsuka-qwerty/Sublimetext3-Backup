@@ -1,140 +1,134 @@
 status	key	command
-Composition	Backspace	Backspace
-Composition	Ctrl a	MoveCursorToBeginning
-Composition	Ctrl Backspace	Backspace
-Composition	Ctrl d	MoveCursorRight
-Composition	Ctrl Down	MoveCursorToEnd
-Composition	Ctrl e	MoveCursorToBeginning
-Composition	Ctrl Enter	Commit
-Composition	Ctrl f	MoveCursorToEnd
-Composition	Ctrl g	Delete
-Composition	Ctrl h	Backspace
-Composition	Ctrl i	ConvertToFullKatakana
-Composition	Ctrl k	MoveCursorLeft
-Composition	Ctrl l	MoveCursorRight
-Composition	Ctrl Left	MoveCursorToBeginning
-Composition	Ctrl m	Commit
-Composition	Ctrl n	MoveCursorToEnd
-Composition	Ctrl o	ConvertToHalfWidth
-Composition	Ctrl p	ConvertToFullAlphanumeric
-Composition	Ctrl Right	MoveCursorToEnd
-Composition	Ctrl s	MoveCursorLeft
-Composition	Ctrl Shift Space	InsertFullSpace
-Composition	Ctrl Space	InsertHalfSpace
-Composition	Ctrl t	ConvertToHalfAlphanumeric
-Composition	Ctrl u	ConvertToHiragana
-Composition	Ctrl Up	MoveCursorToBeginning
-Composition	Ctrl x	MoveCursorToEnd
-Composition	Ctrl z	Cancel
-Composition	Delete	Delete
-Composition	Down	MoveCursorToEnd
-Composition	Eisu	ToggleAlphanumericMode
-Composition	End	MoveCursorToEnd
-Composition	Enter	Commit
-Composition	ESC	Cancel
-Composition	F10	ConvertToHalfAlphanumeric
-Composition	F2	ConvertWithoutHistory
-Composition	F6	ConvertToHiragana
-Composition	F7	ConvertToFullKatakana
-Composition	F8	ConvertToHalfWidth
-Composition	F9	ConvertToFullAlphanumeric
-Composition	Henkan	Convert
-Composition	Hiragana	InputModeHiragana
-Composition	Home	MoveCursorToBeginning
-Composition	Katakana	InputModeFullKatakana
-Composition	Left	MoveCursorLeft
-Composition	Muhenkan	SwitchKanaType
-Composition	Right	MoveCursorRight
-Composition	Shift Backspace	Backspace
-Composition	Shift ESC	Cancel
-Composition	Shift Left	MoveCursorLeft
-Composition	Shift Muhenkan	ConvertToFullAlphanumeric
-Composition	Shift Right	MoveCursorRight
-Composition	Shift Space	Convert
-Composition	Space	Convert
-Composition	Tab	PredictAndConvert
-Conversion	Backspace	Cancel
-Conversion	Ctrl a	SegmentFocusFirst
-Conversion	Ctrl Backspace	Cancel
-Conversion	Ctrl d	SegmentFocusRight
-Conversion	Ctrl Down	CommitOnlyFirstSegment
-Conversion	Ctrl e	ConvertPrev
-Conversion	Ctrl Enter	Commit
-Conversion	Ctrl f	SegmentFocusLast
-Conversion	Ctrl g	Cancel
-Conversion	Ctrl h	Cancel
-Conversion	Ctrl i	ConvertToFullKatakana
-Conversion	Ctrl k	SegmentWidthShrink
-Conversion	Ctrl l	SegmentWidthExpand
-Conversion	Ctrl Left	SegmentFocusFirst
-Conversion	Ctrl m	Commit
-Conversion	Ctrl n	CommitOnlyFirstSegment
-Conversion	Ctrl o	ConvertToHalfWidth
-Conversion	Ctrl p	ConvertToFullAlphanumeric
-Conversion	Ctrl Right	SegmentFocusLast
-Conversion	Ctrl s	SegmentFocusLeft
-Conversion	Ctrl Shift Space	InsertFullSpace
-Conversion	Ctrl Space	InsertHalfSpace
-Conversion	Ctrl t	ConvertToHalfAlphanumeric
-Conversion	Ctrl u	ConvertToHiragana
-Conversion	Ctrl Up	ConvertPrev
-Conversion	Ctrl x	ConvertNext
-Conversion	Ctrl z	Cancel
-Conversion	Delete	Cancel
-Conversion	Down	ConvertNext
-Conversion	Eisu	ToggleAlphanumericMode
-Conversion	End	SegmentFocusLast
-Conversion	Enter	Commit
-Conversion	ESC	Cancel
-Conversion	F10	ConvertToHalfAlphanumeric
-Conversion	F6	ConvertToHiragana
-Conversion	F7	ConvertToFullKatakana
-Conversion	F8	ConvertToHalfWidth
-Conversion	F9	ConvertToFullAlphanumeric
-Conversion	Henkan	ConvertNext
-Conversion	Hiragana	InputModeHiragana
-Conversion	Home	SegmentFocusFirst
-Conversion	Katakana	InputModeFullKatakana
-Conversion	Left	SegmentFocusLeft
-Conversion	Muhenkan	SwitchKanaType
-Conversion	PageDown	ConvertNextPage
-Conversion	PageUp	ConvertPrevPage
-Conversion	Right	SegmentFocusRight
-Conversion	Shift Backspace	Cancel
-Conversion	Shift Down	ConvertNextPage
-Conversion	Shift ESC	Cancel
-Conversion	Shift Henkan	ConvertPrev
-Conversion	Shift Left	SegmentWidthShrink
-Conversion	Shift Muhenkan	ConvertToFullAlphanumeric
-Conversion	Shift Right	SegmentWidthExpand
-Conversion	Shift Tab	ConvertPrev
-Conversion	Shift Up	ConvertPrevPage
-Conversion	Space	ConvertNext
-Conversion	Tab	PredictAndConvert
-Conversion	Up	ConvertPrev
-DirectInput	Eisu	IMEOn
-DirectInput	F13	IMEOn
-DirectInput	Henkan	Reconvert
-DirectInput	Hiragana	IMEOn
-DirectInput	Katakana	IMEOn
-Precomposition	Backspace	Revert
-Precomposition	Ctrl Backspace	Undo
-Precomposition	Ctrl Shift Space	InsertFullSpace
-Precomposition	Eisu	ToggleAlphanumericMode
-Precomposition	Hiragana	InputModeHiragana
-Precomposition	Henkan	Reconvert
-Precomposition	Katakana	InputModeFullKatakana
-Precomposition	Muhenkan	InputModeSwitchKanaType
-Precomposition	Shift Muhenkan	ToggleAlphanumericMode
-Precomposition	Space	InsertSpace
-Prediction	Ctrl Delete	DeleteSelectedCandidate
-Suggestion	Down	PredictAndConvert
-Suggestion	Shift Enter	CommitFirstSuggestion
-DirectInput	Ctrl Space	IMEOn
 Precomposition	Ctrl Space	IMEOff
 Composition	Ctrl Space	IMEOff
 Conversion	Ctrl Space	IMEOff
+DirectInput	Ctrl Space	IMEOn
+Composition	Ctrl d	MoveCursorRight
+Composition	Ctrl l	MoveCursorRight
+Composition	Right	MoveCursorRight
+Composition	Shift Right	MoveCursorRight
+Composition	Ctrl Down	MoveCursorToEnd
+Composition	Ctrl f	MoveCursorToEnd
+Composition	Ctrl n	MoveCursorToEnd
+Composition	Ctrl Right	MoveCursorToEnd
+Composition	Ctrl x	MoveCursorToEnd
+Composition	Down	MoveCursorToEnd
+Composition	End	MoveCursorToEnd
+Composition	Ctrl k	MoveCursorLeft
+Composition	Ctrl s	MoveCursorLeft
+Composition	Left	MoveCursorLeft
+Composition	Shift Left	MoveCursorLeft
+Composition	Ctrl a	MoveCursorToBeginning
+Composition	Ctrl e	MoveCursorToBeginning
+Composition	Ctrl Left	MoveCursorToBeginning
+Composition	Ctrl Up	MoveCursorToBeginning
+Composition	Home	MoveCursorToBeginning
+Conversion	Backspace	Cancel
+Conversion	Ctrl Backspace	Cancel
+Conversion	Ctrl g	Cancel
+Conversion	Ctrl h	Cancel
+Composition	Ctrl z	Cancel
+Conversion	Ctrl z	Cancel
+Conversion	Delete	Cancel
+Composition	ESC	Cancel
+Conversion	ESC	Cancel
+Conversion	Shift Backspace	Cancel
+Composition	Shift ESC	Cancel
+Conversion	Shift ESC	Cancel
+Composition	Muhenkan	SwitchKanaType
+Conversion	Muhenkan	SwitchKanaType
+Composition	Hiragana	InputModeHiragana
+Conversion	Hiragana	InputModeHiragana
+Precomposition	Hiragana	InputModeHiragana
+Composition	Ctrl u	ConvertToHiragana
+Conversion	Ctrl u	ConvertToHiragana
+Composition	F6	ConvertToHiragana
+Conversion	F6	ConvertToHiragana
+Composition	Ctrl g	Delete
+Composition	Delete	Delete
+Composition	Eisu	ToggleAlphanumericMode
+Conversion	Eisu	ToggleAlphanumericMode
+Precomposition	Eisu	ToggleAlphanumericMode
 Precomposition	Hankaku/Zenkaku	ToggleAlphanumericMode
+Precomposition	Shift Muhenkan	ToggleAlphanumericMode
+Composition	Ctrl Enter	Commit
+Conversion	Ctrl Enter	Commit
+Composition	Ctrl m	Commit
+Conversion	Ctrl m	Commit
+Composition	Enter	Commit
+Conversion	Enter	Commit
+Precomposition	Ctrl Backspace	Undo
+Composition	F2	ConvertWithoutHistory
+Precomposition	Space	InsertSpace
+Composition	Backspace	Backspace
+Composition	Ctrl Backspace	Backspace
+Composition	Ctrl h	Backspace
+Composition	Shift Backspace	Backspace
+DirectInput	Henkan	Reconvert
+Precomposition	Henkan	Reconvert
+Precomposition	Backspace	Revert
+Conversion	Ctrl Down	CommitOnlyFirstSegment
+Conversion	Ctrl n	CommitOnlyFirstSegment
+Suggestion	Shift Enter	CommitFirstSuggestion
+Precomposition	Muhenkan	InputModeSwitchKanaType
+Conversion	PageDown	ConvertNextPage
+Conversion	Shift Down	ConvertNextPage
+Conversion	Ctrl x	ConvertNext
+Conversion	Down	ConvertNext
+Conversion	Henkan	ConvertNext
+Conversion	Space	ConvertNext
+Prediction	Ctrl Delete	DeleteSelectedCandidate
+Conversion	PageUp	ConvertPrevPage
+Conversion	Shift Up	ConvertPrevPage
+Conversion	Ctrl e	ConvertPrev
+Conversion	Ctrl Up	ConvertPrev
+Conversion	Shift Henkan	ConvertPrev
+Conversion	Shift Tab	ConvertPrev
+Conversion	Up	ConvertPrev
+Composition	Katakana	InputModeFullKatakana
+Conversion	Katakana	InputModeFullKatakana
+Precomposition	Katakana	InputModeFullKatakana
+Composition	Ctrl i	ConvertToFullKatakana
+Conversion	Ctrl i	ConvertToFullKatakana
+Composition	F7	ConvertToFullKatakana
+Conversion	F7	ConvertToFullKatakana
+Composition	Ctrl p	ConvertToFullAlphanumeric
+Conversion	Ctrl p	ConvertToFullAlphanumeric
+Composition	F9	ConvertToFullAlphanumeric
+Conversion	F9	ConvertToFullAlphanumeric
+Composition	Shift Muhenkan	ConvertToFullAlphanumeric
+Conversion	Shift Muhenkan	ConvertToFullAlphanumeric
+Composition	Ctrl Shift Space	InsertFullSpace
+Conversion	Ctrl Shift Space	InsertFullSpace
+Precomposition	Ctrl Shift Space	InsertFullSpace
+Composition	Ctrl o	ConvertToHalfWidth
+Conversion	Ctrl o	ConvertToHalfWidth
+Composition	F8	ConvertToHalfWidth
+Conversion	F8	ConvertToHalfWidth
+Composition	Ctrl t	ConvertToHalfAlphanumeric
+Conversion	Ctrl t	ConvertToHalfAlphanumeric
+Composition	F10	ConvertToHalfAlphanumeric
+Conversion	F10	ConvertToHalfAlphanumeric
+Conversion	Ctrl d	SegmentFocusRight
+Conversion	Right	SegmentFocusRight
+Conversion	Ctrl f	SegmentFocusLast
+Conversion	Ctrl Right	SegmentFocusLast
+Conversion	End	SegmentFocusLast
+Conversion	Ctrl s	SegmentFocusLeft
+Conversion	Left	SegmentFocusLeft
+Conversion	Ctrl a	SegmentFocusFirst
+Conversion	Ctrl Left	SegmentFocusFirst
+Conversion	Home	SegmentFocusFirst
+Conversion	Ctrl k	SegmentWidthShrink
+Conversion	Shift Left	SegmentWidthShrink
+Conversion	Ctrl l	SegmentWidthExpand
+Conversion	Shift Right	SegmentWidthExpand
+Composition	Henkan	Convert
+Composition	Shift Space	Convert
+Composition	Space	Convert
+Suggestion	Down	PredictAndConvert
+Composition	Tab	PredictAndConvert
+Conversion	Tab	PredictAndConvert
 Composition	ASCII	InsertCharacter
 Composition	Kanji	IMEOff
 Composition	OFF	IMEOff

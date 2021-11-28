@@ -1,4 +1,8 @@
 #!/bin/sh
+
+#Set video save path must include /
+SAVE_PATH="~/Downloads/youtube-dl/"
+
 echo "Which do you want to download?"
 echo
 echo "1)One Video"
@@ -17,13 +21,13 @@ echo "You selected ${SELECT}"
 
 if [ "$SELECT" -eq "1" ]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "~/Downloads/youtube-dl/%(title)s-%(uploader)s.mp4" --no-mtime $1
+	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "2" ]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "~/Downloads/youtube-dl/%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
+	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "3" ]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "~/Downloads/youtube-dl/%(channel)s/%(upload_date)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
+	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(channel)s/%(upload_date)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "4" ]
 then
 	echo "1)One video"
@@ -34,10 +38,10 @@ then
 	echo "You selected ${SELECT1}"
 	if [ "$SELECT1" -eq "1" ]
 	then
-		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "~/Downloads/youtube-dl/%(title)s-%(uploader)s.m4a" --no-mtime $1
+		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(title)s-%(uploader)s.m4a" --no-mtime $1
 	elif [ "$SELECT1" -eq "2" ]
 	then
-		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "~/Downloads/youtube-dl/%(playlist_index)s_%(title)s-%(uploader)s.m4a" --no-mtime $1
+		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(playlist_index)s_%(title)s-%(uploader)s.m4a" --no-mtime $1
 	elif [ "$SELECT1" -eq "3" ]
 	then
 		echo "Exit!"
@@ -54,10 +58,10 @@ then
 	exit
 elif [ "$SELECT" -eq "11"]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" -o "~/Downloads/youtube-dl/%(title)s.mp4" $1
+	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" -o "$SAVE_PATH%(title)s.mp4" $1
 elif [ "$SELECT" -eq "22" ]
 then
-	youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]" -o "~/Downloads/youtube-dl/%(title)s.m4a" $1
+	youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]" -o "$SAVE_PATH%(title)s.m4a" $1
 elif [ "$SELECT" -eq "99" ]
 then
 	pip install youtube-dl -U
@@ -69,4 +73,3 @@ else
 fi
 
 exit
-

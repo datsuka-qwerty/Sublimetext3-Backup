@@ -1,0 +1,145 @@
+{
+  "Settings": {
+    "General": {
+      "theme": "dark"
+    }
+  },
+  "Gestures": [
+    {
+      "pattern": [
+        [
+          -2,
+          -62
+        ],
+        [
+          18,
+          -147
+        ],
+        [
+          -6,
+          -12
+        ],
+        [
+          -201,
+          4
+        ]
+      ],
+      "command": {
+        "name": "FocusLeftTab",
+        "settings": {
+          "cycling": true,
+          "excludeDiscarded": false
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          1,
+          0
+        ]
+      ],
+      "command": {
+        "name": "PageForth"
+      }
+    },
+    {
+      "pattern": [
+        [
+          -1,
+          0
+        ]
+      ],
+      "command": {
+        "name": "PageBack"
+      }
+    },
+    {
+      "pattern": [
+        [
+          8,
+          294
+        ],
+        [
+          8,
+          -9
+        ],
+        [
+          47,
+          -289
+        ]
+      ],
+      "command": {
+        "name": "ReloadTab",
+        "settings": {
+          "cache": true
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          -9,
+          237
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          191,
+          -45
+        ]
+      ],
+      "command": {
+        "name": "CloseTab",
+        "settings": {
+          "nextFocus": "default",
+          "closePinned": true
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          2,
+          54
+        ]
+      ],
+      "command": {
+        "name": "NewTab",
+        "settings": {
+          "position": "default",
+          "focus": true
+        }
+      }
+    },
+    {
+      "pattern": [
+        [
+          -7,
+          -195
+        ],
+        [
+          5,
+          -10
+        ],
+        [
+          239,
+          -10
+        ],
+        [
+          70,
+          -13
+        ]
+      ],
+      "command": {
+        "name": "FocusRightTab",
+        "settings": {
+          "cycling": true,
+          "excludeDiscarded": false
+        }
+      }
+    }
+  ]
+}

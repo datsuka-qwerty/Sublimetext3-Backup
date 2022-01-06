@@ -1,0 +1,105 @@
+/*ツールバー*/
+.color-behind-tabs-off .toolbar-mainbar
+/*タブバー*/
+,div#tabs-tabbar-container
+/*パネル*/
+,div#panels-container
+/*垂直タブにしている時のヘッダー*/
+,#browser:not(.tabs-top) #header {
+  background: transparent !important;
+  backdrop-filter: blur(10px);  /*背景をすりガラス状にする*/
+}
+
+#browser:not(.address-top) > #header {
+	box-shadow: none;
+}
+
+/*パネルの影*/
+.panel-group {
+  box-shadow: none !important;
+}
+
+/*タブバーの影*/
+#tabs-tabbar-container {
+  border:none !important;
+  backdrop-filter: blur(10px);  /*背景をすりガラス状にする*/
+}
+
+/*ステータスバー*/
+:not(.tabs-bottom)#browser > footer {
+  background: transparent !important;
+  box-shadow: none;
+  backdrop-filter: blur(10px);  /*背景をすりガラス状にする*/
+}
+
+/*翻訳パネル透明化*/
+/*入力欄*/
+.panel .TranslatePanel-SrcText
+/*翻訳結果欄*/
+,.panel .TranslatePanel-TranslatedText {
+  background: transparent !important;
+  backdrop-filter: blur(10px);  /*背景をすりガラス状にする*/
+  border: none;
+  box-shadow: none;
+}
+
+/*ブックマークバー透明化*/
+.bookmark-bar
+,.color-behind-tabs-off
+.bookmark-bar button
+,.color-behind-tabs-on
+.bookmark-bar
+,.color-behind-tabs-on
+.bookmark-bar button {
+  background: transparent !important;
+  backdrop-filter: blur(10px);  /*背景をすりガラス状にする*/
+}
+
+/*アドレスバーの境界線を非表示&背景色をテーマに合わせる*/
+.UrlBar,
+.toolbar,
+.toolbar-mainbar,
+.toolbar-large,
+.UrlBar-AddressField,
+.UrlBar-SearchField,
+.UrlBar-AddressField:focus,
+.UrlBar-SearchField:focus {
+    border: none !important;
+    outline: none !important;
+	box-shadow: none;
+	background: transparent !important;
+    backdrop-filter: blur(10px);  /*背景をすりガラス状にする*/
+}
+.address-bottom .toolbar-mainbar {
+    box-shadow: none;
+}
+/*アドレスバーの境界線を非表示&背景色をテーマに合わせる:フォーカス時*/
+:focus {
+    border: none !important;
+    outline: none !important;
+	box-shadow: none;
+	background: transparent !important;
+	backdrop-filter: blur(10px);  /*背景をすりガラス状にする*/
+}
+
+.color-behind-tabs-on.transparent-tabbar #tabs-tabbar-container.bottom {
+	box-shadow: none;
+}
+
+/*設定（タブで開くようにしている場合のみ動作）*/
+.vivaldi-settings,
+.settings-sidebar,
+.settings-content {
+  background: transparent !important;
+  backdrop-filter: blur(10px);  /*背景をすりガラス状にする*/
+}
+
+/*サイトの四隅を角丸化*/
+#webpage-stack {
+  border-radius: 8px;  /*数字を大きくするとより角丸になる*/
+}
+
+/*Vivaldiボタンの色変更*/
+/* .vivaldi span {
+  fill: red;
+} */

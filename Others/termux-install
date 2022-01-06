@@ -1,1 +1,32 @@
 #!/bin/sh
+
+echo "Do you want to run termux-setup-storage?"
+echo "This is only required the first time."
+echo
+echo "termux-setup-storageを実行しますか？"
+echo "これは初回のみ必要です。"
+read  -p " -> " SELECT
+
+if [ $SELECT = y -o $SELECT = Y ]
+then
+	termux-setup-storage
+else
+	echo "Skipped"
+
+echo "Updating package list..."
+apt update && apt upgrade -y
+
+echo "Install required packages..."
+apt update && apt install -y nano curl python ffmpeg
+
+echo "Install yt-dlp via pip..."
+pip install -U
+
+echo "Downloading termux-url-opener..."
+mkdir ~/bin && curl https://raw.githubusercontent.com/datsuka-qwerty/Sublimetext3-Backup/master/Others/termux-url-opener -o ~/bin/termux-url-opener && chmod +x ~/bin/termux-url-opener
+
+echo
+echo "All done!!"
+echo "To learn how to use it, go to the following site."
+echo "使い方を知りたい場合は以下のサイトを閲覧してください。"
+echo "https://datsuka-qwerty.hatenablog.com/entry/androidtips/termux-youtube-dl"

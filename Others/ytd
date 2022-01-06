@@ -14,20 +14,20 @@ echo "5)Exit"
 echo
 echo "11)Normal Download"
 echo "22)Normal Audio Download"
-echo "99)Update youtube-dl"
+echo "99)Update yt-dlp"
 echo
 read  -p " -> " SELECT
 echo "You selected ${SELECT}"
 
 if [ "$SELECT" -eq "1" ]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(title)s-%(uploader)s.mp4" --no-mtime $1
+	yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "2" ]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
+	yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "3" ]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(channel)s/%(upload_date)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
+	yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(channel)s/%(upload_date)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "4" ]
 then
 	echo "1)One video"
@@ -38,10 +38,10 @@ then
 	echo "You selected ${SELECT1}"
 	if [ "$SELECT1" -eq "1" ]
 	then
-		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(title)s-%(uploader)s.m4a" --no-mtime $1
+		yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(title)s-%(uploader)s.m4a" --no-mtime $1
 	elif [ "$SELECT1" -eq "2" ]
 	then
-		youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(playlist_index)s_%(title)s-%(uploader)s.m4a" --no-mtime $1
+		yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(playlist_index)s_%(title)s-%(uploader)s.m4a" --no-mtime $1
 	elif [ "$SELECT1" -eq "3" ]
 	then
 		echo "Exit!"
@@ -58,13 +58,13 @@ then
 	exit
 elif [ "$SELECT" -eq "11"]
 then
-	youtube-dl -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" -o "$SAVE_PATH%(title)s.mp4" $1
+	yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" -o "$SAVE_PATH%(title)s.mp4" $1
 elif [ "$SELECT" -eq "22" ]
 then
-	youtube-dl -f "bestaudio[ext=m4a]/best[ext=m4a]" -o "$SAVE_PATH%(title)s.m4a" $1
+	yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]" -o "$SAVE_PATH%(title)s.m4a" $1
 elif [ "$SELECT" -eq "99" ]
 then
-	pip install youtube-dl -U
+	pip install yt-dlp -U
 	sleep 3s
 	exit
 else

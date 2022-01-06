@@ -14,7 +14,7 @@ echo "5)Exit"
 echo
 echo "11)Normal Download"
 echo "22)Normal Audio Download"
-echo "99)Update youtube-dl"
+echo "99)Update yt-dlp"
 echo
 read  -p " -> " SELECT
 echo "You selected ${SELECT}"

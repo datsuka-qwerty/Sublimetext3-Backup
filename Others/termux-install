@@ -12,6 +12,7 @@ then
 	termux-setup-storage
 else
 	echo "Skipped"
+fi
 
 echo "Updating package list..."
 apt update && apt upgrade -y

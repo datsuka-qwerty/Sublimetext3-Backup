@@ -1,9 +1,9 @@
 #!/bin/sh
 
-echo "Do you want to run termux-setup-storage?"
+echo "Do you want to run termux-setup-storage? (y/n) "
 echo "This is only required the first time."
 echo
-echo "termux-setup-storageを実行しますか？"
+echo "termux-setup-storageを実行しますか？ (y/n) "
 echo "これは初回のみ必要です。"
 read  -p " -> " SELECT
 

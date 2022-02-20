@@ -56,7 +56,7 @@ then
 	echo "Exit!"
 	sleep 3s
 	exit
-elif [ "$SELECT" -eq "11"]
+elif [ "$SELECT" -eq "11" ]
 then
 	yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" -o "$SAVE_PATH%(title)s.mp4" $1
 elif [ "$SELECT" -eq "22" ]

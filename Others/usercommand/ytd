@@ -21,7 +21,7 @@ function funciton_v() {
 		yt-dlp --console-title --write-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" --video-format mp4 -P "$SAVE_PATH" $1
 }
 
-while getopts :haU optKey; do
+while getopts :havU optKey; do
 	case "$optKey" in
 		h)
 			function_usage

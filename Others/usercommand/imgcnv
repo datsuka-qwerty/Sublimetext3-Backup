@@ -1,0 +1,4 @@
+#!/bin/sh
+echo "Convert $1 to $2"
+
+mogrify -format $2 *.$1

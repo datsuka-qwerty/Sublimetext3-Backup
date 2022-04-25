@@ -1,5 +1,4 @@
 #!/bin/sh
-
 for FILE in *.$1
 do
     FILENAME=`echo ${FILE} | sed 's/\.[^\.]*$//'`

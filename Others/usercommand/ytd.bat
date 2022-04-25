@@ -5,17 +5,15 @@ set SAVE_PATH=%HOMEPATH%\Downloads\youtube-dl\
 
 set SELECT="0"
 
-echo "Usage: ytd [OPTION]..."
-echo "-h      Display help"
-echo "-a      Download audio only"
-echo "-U      Upgrade yt-dlp"
+echo "-h	Display help"
+echo "-a	Download audio only"
+echo "-U	Upgrade yt-dlp"
+echo "-v	Vidoe download"
 echo.
 set /P SELECT=""
 echo You selected %SELECT%
 
 if %SELECT% == h (
-	echo "Usage: ytd [OPTION]..."
-	echo "No option	Show this message"
 	echo "-h	Display help"
 	echo "-a	Download audio only"
 	echo "-U	Upgrade yt-dlp"
@@ -27,8 +25,6 @@ if %SELECT% == h (
 ) else if %SELECT% == v (
 	yt-dlp --console-title --write-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" --video-format mp4 -P "%SAVE_PATH%" $1
 ) else (
-	echo "Usage: ytd [OPTION]..."
-	echo "No option	Show this message"
 	echo "-h	Display help"
 	echo "-a	Download audio only"
 	echo "-U	Upgrade yt-dlp"

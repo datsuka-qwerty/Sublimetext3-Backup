@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Set video save path must include /
-SAVE_PATH="~/Downloads/youtube-dl/"
+cd ~/storage/downloads/youtube-dl/
 
 function function_usage() {
 		echo "Usage: $(basename ${0}) [OPTION]..."
@@ -10,14 +10,6 @@ function function_usage() {
 		echo "-a	Download audio only"
 		echo "-U	Upgrade yt-dlp"
 		echo "-v	Video download"
-}
-
-function function_a() {
-		yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]" --audio-format m4a  -P "$SAVE_PATH" $1
-}
-
-function funciton_v() {
-		yt-dlp --console-title --write-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" --video-format mp4 -P "$SAVE_PATH" $1
 }
 
 function_usage
@@ -30,13 +22,13 @@ case "$SELECT" in
 		function_usage
 		;;
 	a)
-		function_a
+		yt-dlp --console-title  -f "bestaudio[ext=m4a]/best[ext=m4a]" $2
 		;;
 	U)
 		pip install yt-dlp -U
 		;;
 	v)
-		function_v
+		yt-dlp --console-title -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" $2
 		;;
 	*)
 		function_usage
@@ -49,4 +41,3 @@ case "$SELECT" in
 		;;
 esac
 
-echo "This command is $(basename ${0})"

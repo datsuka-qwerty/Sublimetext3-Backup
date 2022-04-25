@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Set video save path must include /
-SAVE_PATH="~/Downloads/youtube-dl/"
+cd ~/storage/downloads/youtube-dl/
 
 function function_usage() {
 		echo "Usage: $(basename ${0}) [OPTION]..."
@@ -13,27 +13,19 @@ function function_usage() {
 exit 2
 }
 
-function function_a() {
-		yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]" --audio-format m4a  -P "$SAVE_PATH" $1
-}
-
-function funciton_v() {
-		yt-dlp --console-title --write-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" --video-format mp4 -P "$SAVE_PATH" $1
-}
-
 while getopts :havU optKey; do
 	case "$optKey" in
 		h)
 			function_usage
 			;;
 		a)
-			function_a
+			yt-dlp --console-title -f "bestaudio[ext=m4a]/best[ext=m4a]" $2
 			;;
 		U)
 			pip install yt-dlp -U
 			;;
 		v)
-			funciton_v
+			yt-dlp --console-title -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" $2
 			;;
 		\?)
 			echo "Bad Option!!"
@@ -45,5 +37,3 @@ while getopts :havU optKey; do
 	esac
 done
 shift $((OPTIND - 1))
-
-echo "This command is $(basename ${0})"

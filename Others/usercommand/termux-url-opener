@@ -5,9 +5,11 @@ SAVE_PATH="~/Downloads/youtube-dl/"
 
 function function_usage() {
 		echo "Usage: $(basename ${0}) [OPTION]..."
-		echo "-h      Display help"
-		echo "-a      Download audio only"
-		echo "-U      Upgrade yt-dlp"
+		echo "No option	Show this message"
+		echo "-h	Display help"
+		echo "-a	Download audio only"
+		echo "-U	Upgrade yt-dlp"
+		echo "-v	Video download"
 }
 
 function function_a() {
@@ -33,13 +35,17 @@ case "$SELECT" in
 	U)
 		pip install yt-dlp -U
 		;;
+	v)
+		function_v
+		;;
+	*)
+		function_usage
+		exit 2
+		;;
 	\?)
 		echo "Bad Option!!"
 		function_usage
 		exit 2
-		;;
-	*)
-		function_v
 		;;
 esac
 

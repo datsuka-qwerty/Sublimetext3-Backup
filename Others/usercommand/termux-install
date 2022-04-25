@@ -26,7 +26,7 @@ pip install -U yt-dlp
 echo "Downloading termux-url-opener..."
 mkdir ~/bin && curl https://raw.githubusercontent.com/datsuka-qwerty/Sublimetext3-Backup/master/Others/termux-url-opener -o ~/bin/termux-url-opener && chmod +x ~/bin/termux-url-opener
 
-echo
+echo ""
 echo "All done!!"
 echo "To learn how to use it, go to the following site."
 echo "使い方を知りたい場合は以下のサイトを閲覧してください。"

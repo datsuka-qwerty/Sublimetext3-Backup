@@ -14,8 +14,8 @@ elif [ "$SELECT" -eq "2" ]
 then
 	pdftoppm -jpg -r 300 $1 out
 else
-        echo "Please Retery :-("
-        sleep 5s
+		echo "Please Retery :-("
+		sleep 5s
 fi
 
 exit

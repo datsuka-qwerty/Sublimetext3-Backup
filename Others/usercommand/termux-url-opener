@@ -22,13 +22,13 @@ case "$SELECT" in
 		function_usage
 		;;
 	a)
-		yt-dlp --console-title  -f "bestaudio[ext=m4a]/best[ext=m4a]" $2
+		yt-dlp --console-title  -f "bestaudio[ext=m4a]/best[ext=m4a]" $1
 		;;
 	U)
 		pip install yt-dlp -U
 		;;
 	v)
-		yt-dlp --console-title --write-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" $2
+		yt-dlp --console-title --write-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" $1
 		;;
 	*)
 		function_usage

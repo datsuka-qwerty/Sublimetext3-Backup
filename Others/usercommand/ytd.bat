@@ -23,7 +23,7 @@ if %SELECT% == h (
 ) else if %SELECT% == U (
 	pip install yt-dlp -U --user
 ) else if %SELECT% == v (
-	yt-dlp -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" %1%
+	yt-dlp --console-title --write-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" %1%
 ) else (
 	echo "-h	Display help"
 	echo "-a	Download audio only"

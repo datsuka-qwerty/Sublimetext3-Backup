@@ -28,7 +28,7 @@ case "$SELECT" in
 		pip install yt-dlp -U
 		;;
 	v)
-		yt-dlp --console-title -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" $2
+		yt-dlp --console-title --write-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" $2
 		;;
 	*)
 		function_usage

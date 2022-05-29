@@ -24,7 +24,7 @@ echo "Install yt-dlp via pip..."
 pip install -U yt-dlp
 
 echo "Downloading termux-url-opener..."
-mkdir ~/bin && curl https://raw.githubusercontent.com/datsuka-qwerty/Sublimetext3-Backup/master/Others/termux-url-opener -o ~/bin/termux-url-opener && chmod +x ~/bin/termux-url-opener
+mkdir ~/bin && curl https://raw.githubusercontent.com/datsuka-qwerty/Sublimetext3-Backup/master/Others/usercommand/termux-url-opener -o ~/bin/termux-url-opener && chmod +x ~/bin/termux-url-opener
 
 echo ""
 echo "All done!!"

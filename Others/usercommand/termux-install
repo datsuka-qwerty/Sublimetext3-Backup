@@ -10,20 +10,27 @@ read  -p " -> " SELECT
 if [ $SELECT = y -o $SELECT = Y ]
 then
 	termux-setup-storage
+	echo "After granting access to the storage, press any key to continue."
+	echo "ストレージへのアクセス許可をしたら、なにかキーを押して続行してください。"
+	read -p "Press any key to continue... "
 else
 	echo "Skipped"
 fi
 
 echo "Updating package list..."
+sleep 3s
 apt update && apt upgrade -y
 
 echo "Install required packages..."
+sleep 3s
 apt update && apt install -y nano curl python ffmpeg
 
 echo "Install yt-dlp via pip..."
+sleep 3s
 pip install -U yt-dlp
 
 echo "Downloading termux-url-opener..."
+sleep 3s
 mkdir ~/bin && curl https://raw.githubusercontent.com/datsuka-qwerty/Sublimetext3-Backup/master/Others/usercommand/termux-url-opener -o ~/bin/termux-url-opener && chmod +x ~/bin/termux-url-opener
 
 echo ""

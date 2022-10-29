@@ -1,21 +1,33 @@
 #!/bin/sh
 echo "Which do you want?"
 echo
+echo "Convert PDF to Image"
+echo "--------------------"
 echo "1)PDF to PNG"
 echo "2)PDF to JPG"
 echo
+echo
+echo "Convert Image to PDF"
+echo "--------------------"
+echo "3)PNG to PDF"
+echo "4)JPG to PDF"
+echo
 read  -p " -> " SELECT
 echo "You selected ${SELECT}"
-
 if [ "$SELECT" -eq "1" ]
 then
-	pdftoppm -png -r 300 $1 out
+        pdftoppm -png -r 300 $1 out
 elif [ "$SELECT" -eq "2" ]
 then
-	pdftoppm -jpg -r 300 $1 out
+        pdftoppm -jpg -r 300 $1 out
+elif [ "$SELECT" -eq "3" ]
+then
+        convert $1 $(basename $1 .jpg).pdf
+elif [ "$SELECT" -eq "4" ]
+then
+        convert $1 $(basename $1 .jpg).pdf
 else
-		echo "Please Retery :-("
-		sleep 5s
+                echo "Please Retery :-("
+                sleep 5s
 fi
-
 exit

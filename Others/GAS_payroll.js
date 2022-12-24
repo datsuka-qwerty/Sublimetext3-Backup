@@ -24,6 +24,6 @@ function myFunction() {
           row += 1;
         }
       }
-      total -= (sh.getRange("D3").getValue() * hwage) - sh.getRange("E3").getValue(); // calculating wage
+      total -= (sh.getRange("D3").getValue() * hwage) + sh.getRange("E3").getValue(); // calculating wage
       sh.getRange("G3").setValue(total); // print total wage
     }

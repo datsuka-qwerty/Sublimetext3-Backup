@@ -3,18 +3,19 @@
 __日本語版は[こちら](/README.jp.md)__
 
 
-- [Files name format](#user-content-files-name-format)
-- [Windows User](#user-content-windows-user)
-	- [How to restore settings](#user-content-how-to-restore-settings)
-	- [Install MSYS32](#user-content-install-msys32)
-	- [Install node.js](#user-content-install-nodejs)
-	- [Install CodeIntel](#user-content-install-codeintel)
-- [Linux User](#user-content-linux-user)
-	- [How to restore settings](#user-content-how-to-restore-settings-1)
-	- [Install clnag](#user-content-install-clnag)
-	- [Install node.js](#user-content-install-nodejs-1)
-	- [Install CodeIntel](#user-content-install-codeintel-1)
-- [CAUTION](#user-content-caution)
+- [This is my SublimeText3 settings.](#this-is-my-sublimetext3-settings)
+	- [Files name format](#files-name-format)
+- [Windows User](#windows-user)
+	- [How to restore settings](#how-to-restore-settings)
+	- [Install clang](#install-clang)
+	- [Install node.js](#install-nodejs)
+	- [Install CodeIntel](#install-codeintel)
+- [Linux User](#linux-user)
+	- [How to restore settings](#how-to-restore-settings-1)
+	- [Install clnag](#install-clnag)
+	- [Install node.js](#install-nodejs-1)
+	- [Install CodeIntel](#install-codeintel-1)
+	- [CAUTION](#caution)
 
 <a id="user-content-files-name-format"></a>
 Files name format

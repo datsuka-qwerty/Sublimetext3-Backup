@@ -1,18 +1,20 @@
 function myFunction() {
-      var shid = "SheetのID";
-      var shname = "シートの名前";
-      var sh = SpreadsheetApp.openById(shid).getSheetByName(shname);
-      var calendar = CalendarApp.getCalendarById("メールアドレス");
-      sh.getRange('A6:E999').clear(); // clear workspace
-      var start = sh.getRange("A3").getValue(); // get counting date
-      var end = sh.getRange("B3").getValue();
+      var ss_id = "シートのID";
+      var sh_name = "シートの名前";
+      var sh = SpreadsheetApp.openById(ss_id).getSheetByName(sh_name);
+      var calendar = CalendarApp.getCalendarById("カレンダーのID(メールアドレス)");
+      sh.getRange("A6:E999").clear(); // clear workspace
+      var start = new Date(sh.getRange("A3").getValue()); // get counting date
+      var end = new Date(sh.getRange("B3").getValue());
+      end.setDate(end.getDate()+1);
+      var srch = sh.getRange("F3").getValue();
       var events = calendar.getEvents(start, end); // get events
       var total = 0;
       var row = 6;
       var hwage = sh.getRange("C3").getValue(); // get hourly wage
       // printing events
       for(var i = 0; i < events.length; i++) {
-        if (events[i].getColor() === '8'){
+        if (events[i].getTitle() === srch){
           var start = events[i].getStartTime();
           var end = events[i].getEndTime();
           sh.getRange(row, 1).setValue(events[i].getTitle()); // event name
@@ -24,6 +26,6 @@ function myFunction() {
           row += 1;
         }
       }
-      total -= (sh.getRange("D3").getValue() * hwage) - sh.getRange("E3").getValue(); // calculating wage
-      sh.getRange("G3").setValue(total); // print total wage
+      total -= (sh.getRange("D3").getValue() * hwage) + sh.getRange("E3").getValue(); // calculating wage
+      sh.getRange("H3").setValue(total); // print total wage
     }

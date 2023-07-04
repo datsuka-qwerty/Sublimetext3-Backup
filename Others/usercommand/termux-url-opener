@@ -23,75 +23,76 @@ echo "You selected ${SELECT}"
 
 if [ "$SELECT" -eq "1" ]
 then
-	yt-dlp --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(title)s-%(uploader)s.mp4" --no-mtime $1
+		yt-dlp --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "2" ]
 then
-	yt-dlp --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
+		yt-dlp --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "3" ]
 then
-	yt-dlp --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(channel)s/%(upload_date)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
+		yt-dlp --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(channel)s/%(upload_date)s_%(title)s-%(uploader)s.mp4" --no-mtime $1
 elif [ "$SELECT" -eq "4" ]
 then
-	echo "1)One video"
-	echo "2)Plyalist"
-	echo "3)Exit"
-	echo
-	read -p " -> " SELECT1
-	echo "You selected ${SELECT1}"
-	if [ "$SELECT1" -eq "1" ]
-	then
-		yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(title)s-%(uploader)s.m4a" --no-mtime $1
-	elif [ "$SELECT1" -eq "2" ]
-	then
-		yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(playlist_index)s_%(title)s-%(uploader)s.m4a" --no-mtime $1
-	elif [ "$SELECT1" -eq "3" ]
-	then
+		echo "1)One video"
+		echo "2)Plyalist"
+		echo "3)Exit"
+		echo
+		read -p " -> " SELECT1
+		echo "You selected ${SELECT1}"
+		if [ "$SELECT1" -eq "1" ]
+		then
+				yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(title)s-%(uploader)s.m4a" --no-mtime $1
+		elif [ "$SELECT1" -eq "2" ]
+		then
+				yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]"  -o "$SAVE_PATH%(playlist_index)s_%(title)s-%(uploader)s.m4a" --no-mtime $1
+		elif [ "$SELECT1" -eq "3" ]
+		then
+				echo "Exit!"
+				sleep 3s
+				exit
+		else
+				echo "Please Retry :-("
+				exit
+		fi
+elif [ "$SELECT" -eq "5" ]
+then
+		echo "Which do you want to download?"
+		echo
+		echo "1)One Video"
+		echo "2)Playlist"
+		echo
+		read -p " -> " SELECTN
+		echo "You selected ${SELECTN}"
+		read -p "User ID ->" USERID
+		read -p "Password ->" PASSWORD
+		if ["$SELECTN" -eq "1" ]
+		then
+				yt-dlp -u $USERID -p $PASSWORD --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(title)s[%(id)s]-%(uploader)s.mp4" $1
+		elif [ "$SELECTN" -eq "2" ]
+		then
+				yt-dlp -u $USERID -p $PASSWORD --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s[%(id)s]-%(uploader)s.mp4" --no-mtime $1
+		else
+				echo "Please Retry :-("
+				exit
+		fi
+elif [ "$SELECT" -eq "6" ]
+then
 		echo "Exit!"
 		sleep 3s
 		exit
-	else
-		echo "Please Retry :-("
-		exit
-	fi
-elif [ "$SELECT" -eq "5" ]
-then
-	echo "Which do you want to download?"
-	echo
-	echo "1)One Video"
-	echo "2)Playlist"
-	echo
-	read -p " -> " SELECTN
-	echo "You selected ${SELECTN}"
-	read -p "User ID ->" USERID
-	read -p "Password ->" PASSWORD
-	if ["$SELECTN" -eq "1" ]
-	then
-		yt-dlp -u $USERID -p $PASSWORD --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(title)s[%(id)s]-%(uploader)s.mp4" $1
-	elif [ "$SELECTN" -eq "2" ]
-	then
-		yt-dlp -u $USERID -p $PASSWORD --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]"  -o "$SAVE_PATH%(playlist_uploader)s-%(playlist_title)s/%(playlist_index)s_%(title)s[%(id)s]-%(uploader)s.mp4" --no-mtime $1
-	else
-		echo "Please Retry :-("
-		exit
-elif [ "$SELECT" -eq "6" ]
-then
-	echo "Exit!"
-	sleep 3s
-	exit
 elif [ "$SELECT" -eq "11" ]
 then
-	yt-dlp --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" -o "$SAVE_PATH%(title)s.mp4" $1
+		yt-dlp --embed-thumbnail --embed-subs --sub-langs "ja" --no-write-auto-subs -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]" -o "$SAVE_PATH%(title)s.mp4" $1
 elif [ "$SELECT" -eq "22" ]
 then
-	yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]" -o "$SAVE_PATH%(title)s.m4a" $1
+		yt-dlp -f "bestaudio[ext=m4a]/best[ext=m4a]" -o "$SAVE_PATH%(title)s.m4a" $1
 elif [ "$SELECT" -eq "99" ]
 then
-	pip install yt-dlp -U
-	sleep 3s
-	exit
+		pip install yt-dlp -U
+		sleep 3s
+		exit
 else
-	echo "Please Retry :-("
-	sleep 5s
+		echo "Please Retry :-("
+		sleep 5s
 fi
 
 exit

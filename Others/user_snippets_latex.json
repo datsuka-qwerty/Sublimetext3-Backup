@@ -1,0 +1,144 @@
+{
+	"report": {
+        "prefix": "report",
+        "body": [
+            "\\documentclass[a4j,uplatex]{jsarticle}",
+            "% グラフ関係",
+            "\\usepackage[dvipdfmx]{graphicx}",
+            "\\usepackage[dvipdfmx]{color}",
+            "% 数式関係",
+            "\\usepackage{siunitx}",
+            "\\usepackage{amsmath}",
+            "\\usepackage{amssymb}",
+            "% 数式番号を(セクション番号.式番号)の形式にする e.g. (2.1)",
+            "\\numberwithin{equation}{section}",
+            "% 表でHを使う",
+            "\\usepackage{float}",
+            "% セルに斜線を入れる",
+            "\\usepackage{diagbox}",
+            "% セル結合を使えるようにする",
+            "\\usepackage{booktabs, multirow}",
+            "% 複数ページに渡る表を作る",
+            "\\usepackage{longtable}",
+            "% 参考文献用",
+            "\\usepackage{url}",
+            "% bulletより小さい丸,sbt",
+            "\\newcommand{\\sbt}{\\,\\begin{picture}(-1,1)(-1,-3)\\circle*{3}\\end{picture}\\ }",
+            "",
+            "\\title{$1}",
+            "\\author{$2}",
+            "\\date{}",
+            "",
+            "\\begin{document}",
+            "\t\\maketitle",
+            "",
+            "\t\\section{$0}",
+            "\t\\begin{thebibliography}{99}",
+            "\t\t\\bibitem{citekey}",
+            "\t\\end{thebibliography}",
+            "\\end{document}",
+        ],
+        "description": ""
+    },
+    "sourcecode_setup": {
+        "prefix": "sourcecode_setup",
+        "body": [
+            "% ソースコードで日本語のコメントアウトを使う",
+			"% jlistingパッケージが必須、プリアセンブルのどこかに記述する",
+            "\\usepackage{listings, jlisting}",
+            "\\renewcommand{\\lstlistingname}{Code}",
+            "% ソースコードの表示に関する設定",
+            "\\lstset{",
+            "\tbasicstyle={\\ttfamily},",
+            "\tidentifierstyle={\\small},",
+            "\tcommentstyle={\\smallitshape},",
+            "\tkeywordstyle={\\small\\bfseries},",
+            "\tndkeywordstyle={\\small},",
+            "\tstringstyle={\\small\\ttfamily},",
+            "\tframe={tb},",
+            "\tbreaklines=true,",
+            "\tcolumns=[l]{fullflexible},",
+            "\tnumbers=left,",
+            "\txrightmargin=0zw,",
+            "\txleftmargin=3zw,",
+            "\tnumberstyle={\\scriptsize},",
+            "\tstepnumber=1,",
+            "\tnumbersep=1zw,",
+            "\tlineskip=-0.5ex",
+            "}",
+        ],
+        "description": ""
+    },
+    "code": {
+        "prefix": "code",
+        "body": [
+            "\\begin{lstlisting}[caption=$1,label=$2, language=$3, escapechar=!]",
+            "\t$0",
+            "\\end{lstlisting}",
+        ],
+        "description": ""
+    },
+	"section": {
+        "prefix": "section",
+        "body": [
+            "\\section{$1}",
+			"\t$0",
+        ],
+        "description": ""
+    },
+	"subsection": {
+        "prefix": "subsection",
+        "body": [
+            "\\subsection{$1}",
+			"\t$0",
+        ],
+        "description": ""
+    },
+	"subsubsection": {
+        "prefix": "subsubsection",
+        "body": [
+            "\\subsubsection{$1}",
+			"\t$0",
+        ],
+        "description": ""
+    },
+    "figure": {
+        "prefix": "figure",
+        "body": [
+            "\\begin{figure}",
+            "\t\\centering",
+            "\t\\includegraphics{$1}",
+            "\t\\caption{$2 \\label{$3}}",
+            "\\end{figure}",
+        ],
+        "description": ""
+    },
+    "table": {
+        "prefix": "table",
+        "body": [
+            "\\begin{table}[htp]",
+            "\t\\centering",
+            "\t\\caption{$1 \\label{$2}}",
+            "\t\\begin{tabular}{$3}",
+            "\t\t$0",
+            "\t\\end{tabular}",
+            "\\end{table}",
+        ],
+        "description": ""
+    },
+    "longtable": {
+        "prefix": "longtable",
+        "body": [
+            "\\begin{longtable}[htbp]{$1}",
+            "\t\\caption{$2}",
+            "\t\\label{$3}",
+            "\t\\endfirsthead",
+			"\t$0",
+            "\\end{longtable}",
+        ],
+        "description": ""
+    },
+
+
+
+}

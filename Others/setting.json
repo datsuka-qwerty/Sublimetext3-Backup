@@ -1,0 +1,160 @@
+{
+	"todo-tree.regex.regex": "((//|#|%|<!--|;|/\\*|^)\\s*($TAGS)|^\\s*- \\[ \\])",
+	"todo-tree.general.tags": [
+		"BUG",
+		"bug",
+		"BUGS",
+		"bugs",
+		"TODO",
+		"ToDo",
+		"todo",
+		"TODOS",
+		"ToDos",
+		"todos",
+		"FIXME",
+		"fixme",
+		"FIX",
+		"fix",
+		"NOTE",
+		"note",
+		"WARNING",
+		"warning",
+		"Warning"
+	],
+	"todo-tree.general.tagGroups": {
+		"BUG":["bug", "BUGS", "bugs"],
+		"TODO":["ToDo", "todo", "TODOS", "ToDos", "todos"],
+		"FIXME": ["fixme","FIX", "fix"],
+		"NOTE":["note"],
+		"WARNING":["warning", "Warning"]
+	},
+	"todo-tree.highlights.customHighlight": {
+		"BUG":{
+			"iconColour": "#d3869b"
+		},
+		"TODO": {
+		"iconColour": "#FF8C00"
+		},
+		"FIXME":{
+			"iconColour": "#b8bb26"
+		},
+		"NOTE":{
+			"icon": "checklist",
+			"iconColour": "#52c1c7"
+		},
+		"WARNING":{
+			"icon": "alert",
+			"iconColour": "#FF2D00"
+		}
+	},
+	"better-comments.tags": [
+		{
+			"tag": "bug",
+			"color": "#d3869b",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "bugs",
+			"color": "#d3869b",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todos",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "fixme",
+			"color": "#b8bb26",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "fix",
+			"color": "#b8bb26",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "note",
+			"color": "#52c1c7",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "warning",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#3498DB",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		}
+	],
+}

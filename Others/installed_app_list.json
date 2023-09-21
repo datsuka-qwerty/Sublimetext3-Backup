@@ -1,125 +1,107 @@
 {
-	"$schema": "https://aka.ms/winget-packages.schema.2.0.json",
-	"CreationDate": "2023-07-04T12:47:29.985-00:00",
-	"Sources": [
-	  {
-		"Packages": [
-		  {
-			"PackageIdentifier": "7zip.7zip",
-			"Version": "23.01"
-		  },
-		  {
-			"PackageIdentifier": "CrystalDewWorld.CrystalDiskInfo.ShizukuEdition",
-			"Version": "9.0.1"
-		  },
-		  {
-			"PackageIdentifier": "CrystalDewWorld.CrystalDiskMark.ShizukuEdition",
-			"Version": "8.0.4"
-		  },
-		  {
-			"PackageIdentifier": "Discord.Discord",
-			"Version": "1.0.9011"
-		  },
-		  {
-			"PackageIdentifier": "GitHub.GitHubDesktop",
-			"Version": "3.2.6"
-		  },
-		  {
-			"PackageIdentifier": "GnuPG.GnuPG",
-			"Version": "2.4.2"
-		  },
-		  {
-			"PackageIdentifier": "GnuPG.Gpg4win",
-			"Version": "4.1.0"
-		  },
-		  {
-			"PackageIdentifier": "LINE.LINE",
-			"Version": "8.0.0.3114"
-		  },
-		  {
-			"PackageIdentifier": "Microsoft.WindowsTerminal",
-			"Version": "1.17.11461.0"
-		  },
-		  {
-			"PackageIdentifier": "Mozilla.Firefox",
-			"Version": "114.0.2"
-		  },
-		  {
-			"PackageIdentifier": "MusicBee.MusicBee",
-			"Version": "3.5.8447"
-		  },
-		  {
-			"PackageIdentifier": "OBSProject.OBSStudio",
-			"Version": "29.1.3"
-		  },
-		  {
-			"PackageIdentifier": "JanDeDobbeleer.OhMyPosh",
-			"Version": "17.6.0"
-		  },
-		  {
-			"PackageIdentifier": "Microsoft.OneDrive",
-			"Version": "23.122.0611.0001"
-		  },
-		  {
-			"PackageIdentifier": "Valve.Steam",
-			"Version": "2.10.91.91"
-		  },
-		  {
-			"PackageIdentifier": "Microsoft.Teams",
-			"Version": "1.6.00.16472"
-		  },
-		  {
-			"PackageIdentifier": "VivaldiTechnologies.Vivaldi",
-			"Version": "6.1.3035.111"
-		  },
-		  {
-			"PackageIdentifier": "Zoom.Zoom",
-			"Version": "5.15.2.18096"
-		  },
-		  {
-			"PackageIdentifier": "qBittorrent.qBittorrent",
-			"Version": "4.5.4"
-		  },
-		  {
-			"PackageIdentifier": "GoLang.Go",
-			"Version": "1.20.3"
-		  },
-		  {
-			"PackageIdentifier": "Google.NearbyShare",
-			"Version": "1.0.972.0"
-		  },
-		  {
-			"PackageIdentifier": "Microsoft.PowerShell",
-			"Version": "7.3.5.0"
-		  },
-		  {
-			"PackageIdentifier": "Microsoft.PowerToys",
-			"Version": "0.68.1"
-		  },
-		  {
-			"PackageIdentifier": "Oracle.VirtualBox",
-			"Version": "7.0.6"
-		  },
-		  {
-			"PackageIdentifier": "Google.Drive",
-			"Version": "77.0.3.0"
-		  },
-		  {
-			"PackageIdentifier": "Microsoft.VisualStudioCode",
-			"Version": "1.79.2"
-		  },
-		  {
-			"PackageIdentifier": "Google.JapaneseIME",
-			"Version": "2.28.5050.0"
-		  }
-		],
-		"SourceDetails": {
-		  "Argument": "https://cdn.winget.microsoft.com/cache",
-		  "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
-		  "Name": "winget",
-		  "Type": "Microsoft.PreIndexed.Package"
+	"$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+	"CreationDate" : "2023-09-21T22:46:05.195-00:00",
+	"Sources" : 
+	[
+		{
+			"Packages" : 
+			[
+				{
+					"PackageIdentifier" : "CrystalDewWorld.CrystalDiskInfo.ShizukuEdition"
+				},
+				{
+					"PackageIdentifier" : "Discord.Discord"
+				},
+				{
+					"PackageIdentifier" : "GitHub.GitHubDesktop"
+				},
+				{
+					"PackageIdentifier" : "GnuPG.GnuPG"
+				},
+				{
+					"PackageIdentifier" : "GnuPG.Gpg4win"
+				},
+				{
+					"PackageIdentifier" : "LINE.LINE"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PCManager"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Edge"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.EdgeWebView2Runtime"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsTerminal"
+				},
+				{
+					"PackageIdentifier" : "MusicBee.MusicBee"
+				},
+				{
+					"PackageIdentifier" : "JanDeDobbeleer.OhMyPosh"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "Spotify.Spotify"
+				},
+				{
+					"PackageIdentifier" : "Valve.Steam"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Teams"
+				},
+				{
+					"PackageIdentifier" : "VivaldiTechnologies.Vivaldi"
+				},
+				{
+					"PackageIdentifier" : "Zoom.Zoom"
+				},
+				{
+					"PackageIdentifier" : "qBittorrent.qBittorrent"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerShell"
+				},
+				{
+					"PackageIdentifier" : "7zip.7zip"
+				},
+				{
+					"PackageIdentifier" : "Google.NearbyShare"
+				},
+				{
+					"PackageIdentifier" : "Google.GoogleDrive"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudioCode"
+				},
+				{
+					"PackageIdentifier" : "voidtools.Everything"
+				},
+				{
+					"PackageIdentifier" : "VideoLAN.VLC"
+				},
+				{
+					"PackageIdentifier" : "Google.JapaneseIME"
+				},
+				{
+					"PackageIdentifier" : "valinet.ExplorerPatcher"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.PowerToys"
+				}
+			],
+			"SourceDetails" : 
+			{
+				"Argument" : "https://cdn.winget.microsoft.com/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
 		}
-	  }
 	],
-	"WinGetVersion": "1.4.11071"
-  }
+	"WinGetVersion" : "1.5.2201"
+}

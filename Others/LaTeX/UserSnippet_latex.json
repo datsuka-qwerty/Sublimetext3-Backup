@@ -58,7 +58,7 @@
         "prefix": "sourcecode_setup",
         "body": [
             "% ソースコードで日本語のコメントアウトを使う",
-            "\\usepackage{listings, jlisting}",
+            "\\usepackage{listings, jvlisting}",
             "\\renewcommand{\\lstlistingname}{Code}",
             "% ソースコードの表示に関する設定",
             "\\lstset{",
@@ -85,9 +85,9 @@
     "code": {
         "prefix": "code",
         "body": [
-            "\\begin{lstlisting}[caption=$1,label=$2, language=$3, escapechar=!]",
+            "\\begin{lstlistings}[caption=$1,label=$2, language=$3, escapechar=!]",
             "\t$0",
-            "\\end{lstlisting}",
+            "\\end{lstlistings}",
         ],
         "description": ""
     },

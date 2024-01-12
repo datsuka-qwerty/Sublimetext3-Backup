@@ -1,0 +1,13 @@
+{
+  "filters": {},
+  "plugins": ["latex2e"],
+  "rules": {
+	"preset-japanese": true,
+	"preset-ja-technical-writing": true,
+	"preset-ja-spacing": true,
+	"preset-jtf-style": true,
+	"no-mix-dearu-desumasu": true,
+	"no-doubled-joshi": true,
+	"ja-no-orthographic-variants": true
+}
+}

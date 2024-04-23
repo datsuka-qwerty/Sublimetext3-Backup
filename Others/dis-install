@@ -1,0 +1,61 @@
+#!/bin/bash
+file_path="~/Downloads"
+
+if [ $(id -u) -eq 0 ]; then
+	echo "Do not run as root"
+	exit 1
+fi
+
+echo "This is Discord installer by datsuka-qwerty."
+echo "Please input your password for installing discord."
+
+stty -echo && read -rp "Password: " passwd
+echo
+echo $passwd | sudo -S -k echo > /dev/null 2>%1
+if [ $? -ne 0 ]; then
+	echo "Password is incorrect :("
+	exit 1
+else
+	echo "Password is correct!"
+fi
+
+# check wget
+type "wget" > /dev/null 2>&1
+if [ $? -ne 0 ]; then
+	echo "Please install wget"
+fi
+
+# download discord deb file
+wget -O $file_path/discord_installer.deb "https://discord.com/api/download?platform=linux&format=deb"
+
+# download betterdiscord AppImage file
+wget -O $file_path/betterdiscord.AppImage "https://github.com/BetterDiscord/Installer/releases/latest/download/BetterDiscord-Linux.AppImage"
+chmod +x $file_path/betterdiscord.AppImage
+
+# install discord
+if type "gdebi" > /dev/null 2>&1; then
+	echo "Install Discord via gdebi"
+	echo $passwd | sudo -S -k gdebi -n $file_path/discord_installer.deb
+elif type "apt" > /dev/null 2>&1; then
+	echo "Install Discord via apt"
+	echo $passwd | sudo -S -k apt install -y $file_path/discord_installer.deb
+fi
+
+if [ $? -ne 0 ]; then
+	echo "Install Discord failed :("
+	exit 1
+fi
+# launch betterdiscord
+if type "AppImageLauncher" > /dev/null 2>&1; then
+	echo "Launch BetterDiscord via AppImageLauncher"
+	AppImageLauncher $file_path/betterdiscord.AppImage
+else
+	echo "Direct Launch"
+	$file_path/betterdiscord.AppImage
+fi
+
+if [ $? -ne 0 ]; then
+	echo "Launch BetterDiscord failed :("
+else
+	echo "Done!"
+fi
